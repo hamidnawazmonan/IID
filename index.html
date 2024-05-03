@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ID</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <!--  Doughnut Chart -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"
+    integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3ZSTk7kajkaj4D292NLuduDCO1c/NT8Id+jE58KYLKT7hXnbtryGmMg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">IID</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse nav-rightSide" id="navbarSupportedContent">
+        <div class="search-icon-field align-items-center">
+          <div class="search-icon ml-3">
+            <i class="ph ph-magnifying-glass"></i>
+          </div>
+          <input class="search-input" type="search" placeholder="Search" />
+        </div>
+        <button class="btn-login" type="submit">Login</button>
+        <button class="btn-signup" type="submit">Sign Up</button>
+        <i class="ph ph-question btn-info"></i>
+      </div>
+    </nav>
+  </header>
+  <div class="organizations-count">
+    <h3>71 Organizations</h3>
+  </div>
+  <div class="main-content">
+    <div class="filter-side">
+      <div class="filters active">
+        <div class="country">
+          <button class="btn-country" type="button">
+            <label id="country-label" for="checkboxes-1">Country<i class="ph ph-question"></i></label>
+            <i class="ph ph-caret-up btn-icon"></i>
+          </button>
+          <form>
+            <label><input type="checkbox" name="fl-colour" value="pakistan" id="pakistan" />
+              Pakistan</label><br />
+            <label><input type="checkbox" name="fl-colour" value="nepal" id="nepal" />
+              Nepal</label><br />
+            <label><input type="checkbox" name="fl-colour" value="bangladesh" id="bangladesh" />
+              Bangladesh</label><br />
+            <label><input type="checkbox" name="fl-colour" value="srilanka" id="srilanka" />
+              Sri Lanka</label><br />
+            <div class="filter-buttons">
+              <button class="btn-apply" type="submit">
+                <i class="ph ph-check-circle"></i>Apply
+              </button>
+              <button class="btn-cancel" type="submit">
+                <i class="ph ph-x-circle"></i>Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="city">
+          <button class="btn-city" type="button">
+            <label id="country-label" for="checkboxes-1">City<i class="ph ph-question"></i></label>
+            <i class="ph ph-caret-up btn-icon"></i>
+          </button>
+          <form>
+            <label><input type="checkbox" name="fl-colour" value="islamabad" id="islamabad" />
+              Islamabad </label><br />
+            <label><input type="checkbox" name="fl-colour" value="faisalabad" id="faisalabad" />
+              Faisalabad</label><br />
+            <label><input type="checkbox" name="fl-colour" value="lahore" id="lahore" />
+              Lahore</label><br />
+            <label><input type="checkbox" name="fl-colour" value="rawalpindi" id="rawalpindi" />
+              Rawalpindi</label><br />
+            <div class="filter-buttons">
+              <button class="btn-apply" type="submit">
+                <i class="ph ph-check-circle"></i>Apply
+              </button>
+              <button class="btn-cancel" type="submit">
+                <i class="ph ph-x-circle"></i>Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="topics">
+          <button class="btn-topics" type="button">
+            <label id="country-label" for="checkboxes-1">Topics<i class="ph ph-question"></i></label>
+            <i class="ph ph-caret-up btn-icon"></i>
+          </button>
+          <form>
+            <label><input type="checkbox" name="fl-colour" value="production" id="production" />
+              Production</label><br />
+            <label><input type="checkbox" name="fl-colour" value="manufacturing" id="manufacturing" />
+              Manufacturing</label><br />
+            <label><input type="checkbox" name="fl-colour" value="citations" id="citations" />
+              Citations</label><br />
+            <label><input type="checkbox" name="fl-colour" value="cautions" id="cautions" />
+              Cautions</label><br />
+            <div class="filter-buttons">
+              <button class="btn-apply" type="submit">
+                <i class="ph ph-check-circle"></i>Apply
+              </button>
+              <button class="btn-cancel" type="submit">
+                <i class="ph ph-x-circle"></i>Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="details-side">
+      <div class="data-container">
+        <div class="heading">
+          <h3>Biotropics Malaysia (Malaysia)</h3>
+          <p>Shah Alam (GeoNames ID <span>1732903</span>), Malaysia</p>
+        </div>
+        <div class="details-below">
+          <p class="other-names">
+            <span>OTHER NAMES: </span>Institut Kesihatan Negara (ms), Malaysia
+            NIH, NIH Malaysia, National Institutes of Health Malaysia, NIH
+          </p>
+          <div class="details">
+            <div class="left-details">
+              <div class="cards">
+                <div class="card-1">
+                  <h3>Patents</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Articles</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Dissertation</h3>
+                  <p>1,551,000</p>
+                </div>
+              </div>
+              <div class="chart">
+                <div class="my_chart">
+                  <canvas></canvas>
+                </div>
+                <div>
+                  <h3>44.6%</h3>
+                  <p>691,800 works</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-details">
+              <div class="container-1">
+                <h3>ORGANIZATION TYPES</h3>
+                <p>Company</p>
+              </div>
+              <div class="container-1">
+                <h3>WEBSITE</h3>
+                <p class="website-link">https://www.biotropicsmalaysia.com/a</p>
+              </div>
+              <div class="container-1">
+                <h3>Other Identifiers</h3>
+                <div class="inner-container">
+                  <h3>GRID</h3>
+                  <p>grid.487244.9</p>
+                </div>
+                <div class="inner-container">
+                  <h3>ISNI</h3>
+                  <p>0000 0004 0513 0322</p>
+                </div>
+                <div class="inner-container">
+                  <h3>WIKIDATA</h3>
+                  <p>QR5584768</p>
+                </div>
+              </div>
+              <div class="container-1">
+                <a href="">https://0331wa828</a>
+              </div>
+              <button class="btn-details" type="button">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data-container">
+        <div class="heading">
+          <h3>Biotropics Malaysia (Malaysia)</h3>
+          <p>Shah Alam (GeoNames ID <span>1732903</span>), Malaysia</p>
+        </div>
+        <div class="details-below">
+          <p class="other-names">
+            <span>OTHER NAMES: </span>Institut Kesihatan Negara (ms), Malaysia
+            NIH, NIH Malaysia, National Institutes of Health Malaysia, NIH
+          </p>
+          <div class="details">
+            <div class="left-details">
+              <div class="cards">
+                <div class="card-1">
+                  <h3>Patents</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Articles</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Dissertation</h3>
+                  <p>1,551,000</p>
+                </div>
+              </div>
+              <div class="chart">
+                <div class="my_chart">
+                  <canvas></canvas>
+                </div>
+                <div>
+                  <h3>44.6%</h3>
+                  <p>691,800 works</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-details">
+              <div class="container-1">
+                <h3>ORGANIZATION TYPES</h3>
+                <p>Company</p>
+              </div>
+              <div class="container-1">
+                <h3>WEBSITE</h3>
+                <p class="website-link">https://www.biotropicsmalaysia.com/a</p>
+              </div>
+              <div class="container-1">
+                <h3>Other Identifiers</h3>
+                <div class="inner-container">
+                  <h3>GRID</h3>
+                  <p>grid.487244.9</p>
+                </div>
+                <div class="inner-container">
+                  <h3>ISNI</h3>
+                  <p>0000 0004 0513 0322</p>
+                </div>
+                <div class="inner-container">
+                  <h3>WIKIDATA</h3>
+                  <p>QR5584768</p>
+                </div>
+              </div>
+              <div class="container-1">
+                <a href="">https://0331wa828</a>
+              </div>
+              <button class="btn-details" type="button">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </li>
+          <li class="page-item active">
+            <a class="page-link" href="#">1</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <footer class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 text-left">
+          <div class="contact-shortcode-left">
+            <form action="">
+              <h2>Subscribe to ID updates by email</h2>
+              <div class="subscription">
+                <input type="email" placeholder="Email Address" name="Email" class="email" />
+                <button type="submit" name="Subscribe" class="btn-subscribe">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-4 text-right">
+          <div class="contact-shortcode-right">
+            <h2>Have a suggestion for an addition or update to ID?</h2>
+            <div class="curation-request">
+              <button type="submit" name="Request" class="btn-request">
+                Submit a curation request
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
