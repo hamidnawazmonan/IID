@@ -1,35 +1,111 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const filterButton = document.querySelector(".btn-filter");
-  const filters = document.querySelector(".filters");
-  const caretIcon = document.querySelector(".btn-icon");
+function toggleCountryForm() {
+  var countryForm = document.getElementById('country-form');
+  var btnCountry = document.querySelector('.btn-country');
+  var btnCountryIcon = document.querySelector('.btn-country-icon');
 
-  // Add click event listener to filter button
-  filterButton.addEventListener("click", function () {
-    // Toggle the visibility of filters
-    filters.classList.toggle("active");
-    // Toggle the rotation of caret icon based on the active class
-    caretIcon.classList.toggle("rotate", !filters.classList.contains("active"));
-  });
+  countryForm.classList.toggle('active');
+  btnCountry.classList.toggle('open');
+  btnCountryIcon.classList.toggle('open');
+}
 
-  // Function to set initial button behavior
-  function initialButtonBehavior() {
-    // If window width is greater than 767px, add 'active' class to filters
-    if (window.innerWidth > 768) {
-      filters.classList.add("active");
-      // Remove 'rotate' class from caret icon
-      caretIcon.classList.remove("rotate");
-    } else {
-      // Otherwise, remove 'active' class from filters and add 'rotate' class to caret icon
-      filters.classList.remove("active");
-      caretIcon.classList.add("rotate");
-    }
+function cancelForm() {
+  var countryForm = document.getElementById('country-form');
+  var btnCountry = document.querySelector('.btn-country');
+  var btnCountryIcon = document.querySelector('.btn-country-icon');
+
+  countryForm.classList.remove('active');
+  btnCountry.classList.remove('open');
+  btnCountryIcon.classList.remove('open');
+}
+
+function toggleCityForm() {
+  var cityForm = document.getElementById('city-form');
+  var btnCity = document.querySelector('.btn-city');
+  var btnCityIcon = document.querySelector('.btn-city-icon');
+
+  cityForm.classList.toggle('active');
+  btnCity.classList.toggle('open');
+  btnCityIcon.classList.toggle('open');
+}
+
+function cancelCityForm() {
+  var cityForm = document.getElementById('city-form');
+  var btnCity = document.querySelector('.btn-city');
+  var btnCityIcon = document.querySelector('.btn-city-icon');
+
+  cityForm.classList.remove('active');
+  btnCity.classList.remove('open');
+  btnCityIcon.classList.remove('open');
+}
+function toggleTopicsForm() {
+  var topicsForm = document.getElementById('topics-form');
+  var btnTopics = document.querySelector('.btn-topics');
+  var btnTopicsIcon = document.querySelector('.btn-topics-icon');
+
+  topicsForm.classList.toggle('active');
+  btnTopics.classList.toggle('open');
+  btnTopicsIcon.classList.toggle('open');
+}
+
+function cancelTopicsForm() {
+  var topicsForm = document.getElementById('topics-form');
+  var btnTopics = document.querySelector('.btn-topics');
+  var btnTopicsIcon = document.querySelector('.btn-topics-icon');
+
+  topicsForm.classList.remove('active');
+  btnTopics.classList.remove('open');
+  btnTopicsIcon.classList.remove('open');
+}
+
+window.addEventListener('resize', function() {
+  var topicsForm = document.getElementById('topics-form');
+  var btnTopics = document.querySelector('.btn-topics');
+  var btnTopicsIcon = document.querySelector('.btn-topics-icon');
+
+  if (window.innerWidth <= 768) {
+    topicsForm.classList.remove('active');
+    btnTopics.classList.remove('open');
+    btnTopicsIcon.classList.remove('open');
   }
+  else{
+    topicsForm.classList.add('active');
+    btnTopics.classList.add('open');
+    btnTopicsIcon.classList.add('open');
+  }
+});
 
-  // Call initialButtonBehavior function on DOMContentLoaded event
-  initialButtonBehavior();
+window.addEventListener('resize', function() {
+  var countryForm = document.getElementById('country-form');
+  var btnCountry = document.querySelector('.btn-country');
+  var btnCountryIcon = document.querySelector('.btn-country-icon');
 
-  // Call initialButtonBehavior function on window resize
-  window.addEventListener("resize", initialButtonBehavior);
+  if (window.innerWidth <= 768) {
+    countryForm.classList.remove('active');
+    btnCountry.classList.remove('open');
+    btnCountryIcon.classList.remove('open');
+  }
+  else{
+    countryForm.classList.add('active');
+    btnCountry.classList.add('open');
+    btnCountryIcon.classList.add('open');
+  }
+});
+
+window.addEventListener('resize', function() {
+  var cityForm = document.getElementById('city-form');
+  var btnCity = document.querySelector('.btn-city');
+  var btnCityIcon = document.querySelector('.btn-city-icon');
+
+  if (window.innerWidth <= 768) {
+    cityForm.classList.remove('active');
+    btnCity.classList.remove('open');
+    btnCityIcon.classList.remove('open');
+  }
+  else{
+    cityForm.classList.add('active');
+    btnCity.classList.add('open');
+    btnCityIcon.classList.add('open');
+  }
 });
 
 const donut_chart = document.querySelectorAll(".my_chart canvas");

@@ -120,11 +120,52 @@ button:focus-visible {
 .filters {
   width: 100%;
 }
-.filters:not(.active) {
+.country-form {
   display: none;
 }
-.btn-icon.rotate {
+.country-form.active {
+  display: block;
+}
+.btn-country .btn-country-icon {
+  transition: transform 0.3s ease;
+}
+.btn-country:not(.open) .btn-country-icon {
   transform: rotate(180deg);
+}
+.btn-country.open .btn-country-icon {
+  transform: rotate(0deg);
+}
+
+.city-form {
+  display: none;
+}
+.city-form.active {
+  display: block;
+}
+.btn-city .btn-city-icon {
+  transition: transform 0.3s ease;
+}
+.btn-city:not(.open) .btn-city-icon {
+  transform: rotate(180deg);
+}
+.btn-city.open .btn-city-icon {
+  transform: rotate(0deg);
+}
+
+.topics-form {
+  display: none;
+}
+.topics-form.active {
+  display: block;
+}
+.btn-topics .btn-topics-icon {
+  transition: transform 0.3s ease;
+}
+.btn-topics:not(.open) .btn-topics-icon {
+  transform: rotate(180deg);
+}
+.btn-topics.open .btn-topics-icon {
+  transform: rotate(0deg);
 }
 
 .country, .city, .topics {
@@ -277,13 +318,13 @@ button:focus-visible {
       gap: 10px;
       display: flex;
       flex-direction: row;
-      background-color: #f0f0f0;
-      width: 60%;
+      background-color: #f7fcff;
+      width: fit-content;
       padding: 20px 40px;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       border-radius: 30px;
-      border: 1px solid #cecdca;
+      border: 1px solid #e4f3fc;
       h3,
       p {
         text-align: center;
@@ -368,7 +409,7 @@ button:focus-visible {
 }
 .section {
   margin-top: 20px;
-  background-color: #f0f0f0;
+  background-color: #f7fcff;
   padding: 40px 80px;
   h2 {
     font-size: 28px;
@@ -438,21 +479,8 @@ button:focus-visible {
       align-items: center !important;
     }
   }
-  .card-1{
-    width: 100% !important;
-    flex-direction: column;
-    gap: 10px;
-    h3{
-      text-align: center;
-    }
-    p{
-      text-align: center;
-    }
-  }
-  .chart{
-    width: 100% !important;
-    justify-content: center;
-  }
+  
+
 }
 
 @media (max-width: 768px) {
@@ -484,9 +512,7 @@ button:focus-visible {
     justify-content: center;
     align-items: center;
   }
-  .data-container {
-    padding: 20px;
-  }
+
   .left-details {
     width: 100%;
   }

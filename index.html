@@ -46,11 +46,11 @@
     <div class="filter-side">
       <div class="filters active">
         <div class="country">
-          <button class="btn-country" type="button">
+          <button class="btn-country open" type="button" onclick="toggleCountryForm()">
             <label id="country-label" for="checkboxes-1">Country<i class="ph ph-question"></i></label>
-            <i class="ph ph-caret-up btn-icon"></i>
+            <i class="ph ph-caret-up btn-country-icon"></i>
           </button>
-          <form>
+          <form class="country-form active" id="country-form">
             <label><input type="checkbox" name="fl-colour" value="pakistan" id="pakistan" />
               Pakistan</label><br />
             <label><input type="checkbox" name="fl-colour" value="nepal" id="nepal" />
@@ -70,11 +70,11 @@
           </form>
         </div>
         <div class="city">
-          <button class="btn-city" type="button">
-            <label id="country-label" for="checkboxes-1">City<i class="ph ph-question"></i></label>
-            <i class="ph ph-caret-up btn-icon"></i>
+          <button class="btn-city open" type="button" onclick="toggleCityForm()">
+            <label id="city-label" for="checkboxes-1">City<i class="ph ph-question"></i></label>
+            <i class="ph ph-caret-up btn-city-icon"></i>
           </button>
-          <form>
+          <form class="city-form active" id="city-form">
             <label><input type="checkbox" name="fl-colour" value="islamabad" id="islamabad" />
               Islamabad </label><br />
             <label><input type="checkbox" name="fl-colour" value="faisalabad" id="faisalabad" />
@@ -94,11 +94,11 @@
           </form>
         </div>
         <div class="topics">
-          <button class="btn-topics" type="button">
-            <label id="country-label" for="checkboxes-1">Topics<i class="ph ph-question"></i></label>
-            <i class="ph ph-caret-up btn-icon"></i>
+          <button class="btn-topics open" type="button" onclick="toggleTopicsForm()">
+            <label id="topics-label" for="checkboxes-1">Topics<i class="ph ph-question"></i></label>
+            <i class="ph ph-caret-up btn-topics-icon"></i>
           </button>
-          <form>
+          <form class="topics-form active" id="topics-form">
             <label><input type="checkbox" name="fl-colour" value="production" id="production" />
               Production</label><br />
             <label><input type="checkbox" name="fl-colour" value="manufacturing" id="manufacturing" />
@@ -120,6 +120,1230 @@
       </div>
     </div>
     <div class="details-side">
+      <div class="data-container">
+        <div class="heading">
+          <h3>Biotropics Malaysia (Malaysia)</h3>
+          <p>Shah Alam (GeoNames ID <span>1732903</span>), Malaysia</p>
+        </div>
+        <div class="details-below">
+          <p class="other-names">
+            <span>OTHER NAMES: </span>Institut Kesihatan Negara (ms), Malaysia
+            NIH, NIH Malaysia, National Institutes of Health Malaysia, NIH
+          </p>
+          <div class="details">
+            <div class="left-details">
+              <div class="cards">
+                <div class="card-1">
+                  <h3>Patents</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Articles</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Dissertation</h3>
+                  <p>1,551,000</p>
+                </div>
+              </div>
+              <div class="chart">
+                <div class="my_chart">
+                  <canvas></canvas>
+                </div>
+                <div>
+                  <h3>44.6%</h3>
+                  <p>691,800 works</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-details">
+              <div class="container-1">
+                <h3>ORGANIZATION TYPES</h3>
+                <p>Company</p>
+              </div>
+              <div class="container-1">
+                <h3>WEBSITE</h3>
+                <p class="website-link">https://www.biotropicsmalaysia.com/a</p>
+              </div>
+              <div class="container-1">
+                <h3>Other Identifiers</h3>
+                <div class="inner-container">
+                  <h3>GRID</h3>
+                  <p>grid.487244.9</p>
+                </div>
+                <div class="inner-container">
+                  <h3>ISNI</h3>
+                  <p>0000 0004 0513 0322</p>
+                </div>
+                <div class="inner-container">
+                  <h3>WIKIDATA</h3>
+                  <p>QR5584768</p>
+                </div>
+              </div>
+              <div class="container-1">
+                <a href="">https://0331wa828</a>
+              </div>
+              <button class="btn-details" type="button">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data-container">
+        <div class="heading">
+          <h3>Biotropics Malaysia (Malaysia)</h3>
+          <p>Shah Alam (GeoNames ID <span>1732903</span>), Malaysia</p>
+        </div>
+        <div class="details-below">
+          <p class="other-names">
+            <span>OTHER NAMES: </span>Institut Kesihatan Negara (ms), Malaysia
+            NIH, NIH Malaysia, National Institutes of Health Malaysia, NIH
+          </p>
+          <div class="details">
+            <div class="left-details">
+              <div class="cards">
+                <div class="card-1">
+                  <h3>Patents</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Articles</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Dissertation</h3>
+                  <p>1,551,000</p>
+                </div>
+              </div>
+              <div class="chart">
+                <div class="my_chart">
+                  <canvas></canvas>
+                </div>
+                <div>
+                  <h3>44.6%</h3>
+                  <p>691,800 works</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-details">
+              <div class="container-1">
+                <h3>ORGANIZATION TYPES</h3>
+                <p>Company</p>
+              </div>
+              <div class="container-1">
+                <h3>WEBSITE</h3>
+                <p class="website-link">https://www.biotropicsmalaysia.com/a</p>
+              </div>
+              <div class="container-1">
+                <h3>Other Identifiers</h3>
+                <div class="inner-container">
+                  <h3>GRID</h3>
+                  <p>grid.487244.9</p>
+                </div>
+                <div class="inner-container">
+                  <h3>ISNI</h3>
+                  <p>0000 0004 0513 0322</p>
+                </div>
+                <div class="inner-container">
+                  <h3>WIKIDATA</h3>
+                  <p>QR5584768</p>
+                </div>
+              </div>
+              <div class="container-1">
+                <a href="">https://0331wa828</a>
+              </div>
+              <button class="btn-details" type="button">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data-container">
+        <div class="heading">
+          <h3>Biotropics Malaysia (Malaysia)</h3>
+          <p>Shah Alam (GeoNames ID <span>1732903</span>), Malaysia</p>
+        </div>
+        <div class="details-below">
+          <p class="other-names">
+            <span>OTHER NAMES: </span>Institut Kesihatan Negara (ms), Malaysia
+            NIH, NIH Malaysia, National Institutes of Health Malaysia, NIH
+          </p>
+          <div class="details">
+            <div class="left-details">
+              <div class="cards">
+                <div class="card-1">
+                  <h3>Patents</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Articles</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Dissertation</h3>
+                  <p>1,551,000</p>
+                </div>
+              </div>
+              <div class="chart">
+                <div class="my_chart">
+                  <canvas></canvas>
+                </div>
+                <div>
+                  <h3>44.6%</h3>
+                  <p>691,800 works</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-details">
+              <div class="container-1">
+                <h3>ORGANIZATION TYPES</h3>
+                <p>Company</p>
+              </div>
+              <div class="container-1">
+                <h3>WEBSITE</h3>
+                <p class="website-link">https://www.biotropicsmalaysia.com/a</p>
+              </div>
+              <div class="container-1">
+                <h3>Other Identifiers</h3>
+                <div class="inner-container">
+                  <h3>GRID</h3>
+                  <p>grid.487244.9</p>
+                </div>
+                <div class="inner-container">
+                  <h3>ISNI</h3>
+                  <p>0000 0004 0513 0322</p>
+                </div>
+                <div class="inner-container">
+                  <h3>WIKIDATA</h3>
+                  <p>QR5584768</p>
+                </div>
+              </div>
+              <div class="container-1">
+                <a href="">https://0331wa828</a>
+              </div>
+              <button class="btn-details" type="button">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data-container">
+        <div class="heading">
+          <h3>Biotropics Malaysia (Malaysia)</h3>
+          <p>Shah Alam (GeoNames ID <span>1732903</span>), Malaysia</p>
+        </div>
+        <div class="details-below">
+          <p class="other-names">
+            <span>OTHER NAMES: </span>Institut Kesihatan Negara (ms), Malaysia
+            NIH, NIH Malaysia, National Institutes of Health Malaysia, NIH
+          </p>
+          <div class="details">
+            <div class="left-details">
+              <div class="cards">
+                <div class="card-1">
+                  <h3>Patents</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Articles</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Dissertation</h3>
+                  <p>1,551,000</p>
+                </div>
+              </div>
+              <div class="chart">
+                <div class="my_chart">
+                  <canvas></canvas>
+                </div>
+                <div>
+                  <h3>44.6%</h3>
+                  <p>691,800 works</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-details">
+              <div class="container-1">
+                <h3>ORGANIZATION TYPES</h3>
+                <p>Company</p>
+              </div>
+              <div class="container-1">
+                <h3>WEBSITE</h3>
+                <p class="website-link">https://www.biotropicsmalaysia.com/a</p>
+              </div>
+              <div class="container-1">
+                <h3>Other Identifiers</h3>
+                <div class="inner-container">
+                  <h3>GRID</h3>
+                  <p>grid.487244.9</p>
+                </div>
+                <div class="inner-container">
+                  <h3>ISNI</h3>
+                  <p>0000 0004 0513 0322</p>
+                </div>
+                <div class="inner-container">
+                  <h3>WIKIDATA</h3>
+                  <p>QR5584768</p>
+                </div>
+              </div>
+              <div class="container-1">
+                <a href="">https://0331wa828</a>
+              </div>
+              <button class="btn-details" type="button">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data-container">
+        <div class="heading">
+          <h3>Biotropics Malaysia (Malaysia)</h3>
+          <p>Shah Alam (GeoNames ID <span>1732903</span>), Malaysia</p>
+        </div>
+        <div class="details-below">
+          <p class="other-names">
+            <span>OTHER NAMES: </span>Institut Kesihatan Negara (ms), Malaysia
+            NIH, NIH Malaysia, National Institutes of Health Malaysia, NIH
+          </p>
+          <div class="details">
+            <div class="left-details">
+              <div class="cards">
+                <div class="card-1">
+                  <h3>Patents</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Articles</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Dissertation</h3>
+                  <p>1,551,000</p>
+                </div>
+              </div>
+              <div class="chart">
+                <div class="my_chart">
+                  <canvas></canvas>
+                </div>
+                <div>
+                  <h3>44.6%</h3>
+                  <p>691,800 works</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-details">
+              <div class="container-1">
+                <h3>ORGANIZATION TYPES</h3>
+                <p>Company</p>
+              </div>
+              <div class="container-1">
+                <h3>WEBSITE</h3>
+                <p class="website-link">https://www.biotropicsmalaysia.com/a</p>
+              </div>
+              <div class="container-1">
+                <h3>Other Identifiers</h3>
+                <div class="inner-container">
+                  <h3>GRID</h3>
+                  <p>grid.487244.9</p>
+                </div>
+                <div class="inner-container">
+                  <h3>ISNI</h3>
+                  <p>0000 0004 0513 0322</p>
+                </div>
+                <div class="inner-container">
+                  <h3>WIKIDATA</h3>
+                  <p>QR5584768</p>
+                </div>
+              </div>
+              <div class="container-1">
+                <a href="">https://0331wa828</a>
+              </div>
+              <button class="btn-details" type="button">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data-container">
+        <div class="heading">
+          <h3>Biotropics Malaysia (Malaysia)</h3>
+          <p>Shah Alam (GeoNames ID <span>1732903</span>), Malaysia</p>
+        </div>
+        <div class="details-below">
+          <p class="other-names">
+            <span>OTHER NAMES: </span>Institut Kesihatan Negara (ms), Malaysia
+            NIH, NIH Malaysia, National Institutes of Health Malaysia, NIH
+          </p>
+          <div class="details">
+            <div class="left-details">
+              <div class="cards">
+                <div class="card-1">
+                  <h3>Patents</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Articles</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Dissertation</h3>
+                  <p>1,551,000</p>
+                </div>
+              </div>
+              <div class="chart">
+                <div class="my_chart">
+                  <canvas></canvas>
+                </div>
+                <div>
+                  <h3>44.6%</h3>
+                  <p>691,800 works</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-details">
+              <div class="container-1">
+                <h3>ORGANIZATION TYPES</h3>
+                <p>Company</p>
+              </div>
+              <div class="container-1">
+                <h3>WEBSITE</h3>
+                <p class="website-link">https://www.biotropicsmalaysia.com/a</p>
+              </div>
+              <div class="container-1">
+                <h3>Other Identifiers</h3>
+                <div class="inner-container">
+                  <h3>GRID</h3>
+                  <p>grid.487244.9</p>
+                </div>
+                <div class="inner-container">
+                  <h3>ISNI</h3>
+                  <p>0000 0004 0513 0322</p>
+                </div>
+                <div class="inner-container">
+                  <h3>WIKIDATA</h3>
+                  <p>QR5584768</p>
+                </div>
+              </div>
+              <div class="container-1">
+                <a href="">https://0331wa828</a>
+              </div>
+              <button class="btn-details" type="button">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data-container">
+        <div class="heading">
+          <h3>Biotropics Malaysia (Malaysia)</h3>
+          <p>Shah Alam (GeoNames ID <span>1732903</span>), Malaysia</p>
+        </div>
+        <div class="details-below">
+          <p class="other-names">
+            <span>OTHER NAMES: </span>Institut Kesihatan Negara (ms), Malaysia
+            NIH, NIH Malaysia, National Institutes of Health Malaysia, NIH
+          </p>
+          <div class="details">
+            <div class="left-details">
+              <div class="cards">
+                <div class="card-1">
+                  <h3>Patents</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Articles</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Dissertation</h3>
+                  <p>1,551,000</p>
+                </div>
+              </div>
+              <div class="chart">
+                <div class="my_chart">
+                  <canvas></canvas>
+                </div>
+                <div>
+                  <h3>44.6%</h3>
+                  <p>691,800 works</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-details">
+              <div class="container-1">
+                <h3>ORGANIZATION TYPES</h3>
+                <p>Company</p>
+              </div>
+              <div class="container-1">
+                <h3>WEBSITE</h3>
+                <p class="website-link">https://www.biotropicsmalaysia.com/a</p>
+              </div>
+              <div class="container-1">
+                <h3>Other Identifiers</h3>
+                <div class="inner-container">
+                  <h3>GRID</h3>
+                  <p>grid.487244.9</p>
+                </div>
+                <div class="inner-container">
+                  <h3>ISNI</h3>
+                  <p>0000 0004 0513 0322</p>
+                </div>
+                <div class="inner-container">
+                  <h3>WIKIDATA</h3>
+                  <p>QR5584768</p>
+                </div>
+              </div>
+              <div class="container-1">
+                <a href="">https://0331wa828</a>
+              </div>
+              <button class="btn-details" type="button">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data-container">
+        <div class="heading">
+          <h3>Biotropics Malaysia (Malaysia)</h3>
+          <p>Shah Alam (GeoNames ID <span>1732903</span>), Malaysia</p>
+        </div>
+        <div class="details-below">
+          <p class="other-names">
+            <span>OTHER NAMES: </span>Institut Kesihatan Negara (ms), Malaysia
+            NIH, NIH Malaysia, National Institutes of Health Malaysia, NIH
+          </p>
+          <div class="details">
+            <div class="left-details">
+              <div class="cards">
+                <div class="card-1">
+                  <h3>Patents</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Articles</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Dissertation</h3>
+                  <p>1,551,000</p>
+                </div>
+              </div>
+              <div class="chart">
+                <div class="my_chart">
+                  <canvas></canvas>
+                </div>
+                <div>
+                  <h3>44.6%</h3>
+                  <p>691,800 works</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-details">
+              <div class="container-1">
+                <h3>ORGANIZATION TYPES</h3>
+                <p>Company</p>
+              </div>
+              <div class="container-1">
+                <h3>WEBSITE</h3>
+                <p class="website-link">https://www.biotropicsmalaysia.com/a</p>
+              </div>
+              <div class="container-1">
+                <h3>Other Identifiers</h3>
+                <div class="inner-container">
+                  <h3>GRID</h3>
+                  <p>grid.487244.9</p>
+                </div>
+                <div class="inner-container">
+                  <h3>ISNI</h3>
+                  <p>0000 0004 0513 0322</p>
+                </div>
+                <div class="inner-container">
+                  <h3>WIKIDATA</h3>
+                  <p>QR5584768</p>
+                </div>
+              </div>
+              <div class="container-1">
+                <a href="">https://0331wa828</a>
+              </div>
+              <button class="btn-details" type="button">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data-container">
+        <div class="heading">
+          <h3>Biotropics Malaysia (Malaysia)</h3>
+          <p>Shah Alam (GeoNames ID <span>1732903</span>), Malaysia</p>
+        </div>
+        <div class="details-below">
+          <p class="other-names">
+            <span>OTHER NAMES: </span>Institut Kesihatan Negara (ms), Malaysia
+            NIH, NIH Malaysia, National Institutes of Health Malaysia, NIH
+          </p>
+          <div class="details">
+            <div class="left-details">
+              <div class="cards">
+                <div class="card-1">
+                  <h3>Patents</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Articles</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Dissertation</h3>
+                  <p>1,551,000</p>
+                </div>
+              </div>
+              <div class="chart">
+                <div class="my_chart">
+                  <canvas></canvas>
+                </div>
+                <div>
+                  <h3>44.6%</h3>
+                  <p>691,800 works</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-details">
+              <div class="container-1">
+                <h3>ORGANIZATION TYPES</h3>
+                <p>Company</p>
+              </div>
+              <div class="container-1">
+                <h3>WEBSITE</h3>
+                <p class="website-link">https://www.biotropicsmalaysia.com/a</p>
+              </div>
+              <div class="container-1">
+                <h3>Other Identifiers</h3>
+                <div class="inner-container">
+                  <h3>GRID</h3>
+                  <p>grid.487244.9</p>
+                </div>
+                <div class="inner-container">
+                  <h3>ISNI</h3>
+                  <p>0000 0004 0513 0322</p>
+                </div>
+                <div class="inner-container">
+                  <h3>WIKIDATA</h3>
+                  <p>QR5584768</p>
+                </div>
+              </div>
+              <div class="container-1">
+                <a href="">https://0331wa828</a>
+              </div>
+              <button class="btn-details" type="button">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data-container">
+        <div class="heading">
+          <h3>Biotropics Malaysia (Malaysia)</h3>
+          <p>Shah Alam (GeoNames ID <span>1732903</span>), Malaysia</p>
+        </div>
+        <div class="details-below">
+          <p class="other-names">
+            <span>OTHER NAMES: </span>Institut Kesihatan Negara (ms), Malaysia
+            NIH, NIH Malaysia, National Institutes of Health Malaysia, NIH
+          </p>
+          <div class="details">
+            <div class="left-details">
+              <div class="cards">
+                <div class="card-1">
+                  <h3>Patents</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Articles</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Dissertation</h3>
+                  <p>1,551,000</p>
+                </div>
+              </div>
+              <div class="chart">
+                <div class="my_chart">
+                  <canvas></canvas>
+                </div>
+                <div>
+                  <h3>44.6%</h3>
+                  <p>691,800 works</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-details">
+              <div class="container-1">
+                <h3>ORGANIZATION TYPES</h3>
+                <p>Company</p>
+              </div>
+              <div class="container-1">
+                <h3>WEBSITE</h3>
+                <p class="website-link">https://www.biotropicsmalaysia.com/a</p>
+              </div>
+              <div class="container-1">
+                <h3>Other Identifiers</h3>
+                <div class="inner-container">
+                  <h3>GRID</h3>
+                  <p>grid.487244.9</p>
+                </div>
+                <div class="inner-container">
+                  <h3>ISNI</h3>
+                  <p>0000 0004 0513 0322</p>
+                </div>
+                <div class="inner-container">
+                  <h3>WIKIDATA</h3>
+                  <p>QR5584768</p>
+                </div>
+              </div>
+              <div class="container-1">
+                <a href="">https://0331wa828</a>
+              </div>
+              <button class="btn-details" type="button">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data-container">
+        <div class="heading">
+          <h3>Biotropics Malaysia (Malaysia)</h3>
+          <p>Shah Alam (GeoNames ID <span>1732903</span>), Malaysia</p>
+        </div>
+        <div class="details-below">
+          <p class="other-names">
+            <span>OTHER NAMES: </span>Institut Kesihatan Negara (ms), Malaysia
+            NIH, NIH Malaysia, National Institutes of Health Malaysia, NIH
+          </p>
+          <div class="details">
+            <div class="left-details">
+              <div class="cards">
+                <div class="card-1">
+                  <h3>Patents</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Articles</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Dissertation</h3>
+                  <p>1,551,000</p>
+                </div>
+              </div>
+              <div class="chart">
+                <div class="my_chart">
+                  <canvas></canvas>
+                </div>
+                <div>
+                  <h3>44.6%</h3>
+                  <p>691,800 works</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-details">
+              <div class="container-1">
+                <h3>ORGANIZATION TYPES</h3>
+                <p>Company</p>
+              </div>
+              <div class="container-1">
+                <h3>WEBSITE</h3>
+                <p class="website-link">https://www.biotropicsmalaysia.com/a</p>
+              </div>
+              <div class="container-1">
+                <h3>Other Identifiers</h3>
+                <div class="inner-container">
+                  <h3>GRID</h3>
+                  <p>grid.487244.9</p>
+                </div>
+                <div class="inner-container">
+                  <h3>ISNI</h3>
+                  <p>0000 0004 0513 0322</p>
+                </div>
+                <div class="inner-container">
+                  <h3>WIKIDATA</h3>
+                  <p>QR5584768</p>
+                </div>
+              </div>
+              <div class="container-1">
+                <a href="">https://0331wa828</a>
+              </div>
+              <button class="btn-details" type="button">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data-container">
+        <div class="heading">
+          <h3>Biotropics Malaysia (Malaysia)</h3>
+          <p>Shah Alam (GeoNames ID <span>1732903</span>), Malaysia</p>
+        </div>
+        <div class="details-below">
+          <p class="other-names">
+            <span>OTHER NAMES: </span>Institut Kesihatan Negara (ms), Malaysia
+            NIH, NIH Malaysia, National Institutes of Health Malaysia, NIH
+          </p>
+          <div class="details">
+            <div class="left-details">
+              <div class="cards">
+                <div class="card-1">
+                  <h3>Patents</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Articles</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Dissertation</h3>
+                  <p>1,551,000</p>
+                </div>
+              </div>
+              <div class="chart">
+                <div class="my_chart">
+                  <canvas></canvas>
+                </div>
+                <div>
+                  <h3>44.6%</h3>
+                  <p>691,800 works</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-details">
+              <div class="container-1">
+                <h3>ORGANIZATION TYPES</h3>
+                <p>Company</p>
+              </div>
+              <div class="container-1">
+                <h3>WEBSITE</h3>
+                <p class="website-link">https://www.biotropicsmalaysia.com/a</p>
+              </div>
+              <div class="container-1">
+                <h3>Other Identifiers</h3>
+                <div class="inner-container">
+                  <h3>GRID</h3>
+                  <p>grid.487244.9</p>
+                </div>
+                <div class="inner-container">
+                  <h3>ISNI</h3>
+                  <p>0000 0004 0513 0322</p>
+                </div>
+                <div class="inner-container">
+                  <h3>WIKIDATA</h3>
+                  <p>QR5584768</p>
+                </div>
+              </div>
+              <div class="container-1">
+                <a href="">https://0331wa828</a>
+              </div>
+              <button class="btn-details" type="button">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data-container">
+        <div class="heading">
+          <h3>Biotropics Malaysia (Malaysia)</h3>
+          <p>Shah Alam (GeoNames ID <span>1732903</span>), Malaysia</p>
+        </div>
+        <div class="details-below">
+          <p class="other-names">
+            <span>OTHER NAMES: </span>Institut Kesihatan Negara (ms), Malaysia
+            NIH, NIH Malaysia, National Institutes of Health Malaysia, NIH
+          </p>
+          <div class="details">
+            <div class="left-details">
+              <div class="cards">
+                <div class="card-1">
+                  <h3>Patents</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Articles</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Dissertation</h3>
+                  <p>1,551,000</p>
+                </div>
+              </div>
+              <div class="chart">
+                <div class="my_chart">
+                  <canvas></canvas>
+                </div>
+                <div>
+                  <h3>44.6%</h3>
+                  <p>691,800 works</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-details">
+              <div class="container-1">
+                <h3>ORGANIZATION TYPES</h3>
+                <p>Company</p>
+              </div>
+              <div class="container-1">
+                <h3>WEBSITE</h3>
+                <p class="website-link">https://www.biotropicsmalaysia.com/a</p>
+              </div>
+              <div class="container-1">
+                <h3>Other Identifiers</h3>
+                <div class="inner-container">
+                  <h3>GRID</h3>
+                  <p>grid.487244.9</p>
+                </div>
+                <div class="inner-container">
+                  <h3>ISNI</h3>
+                  <p>0000 0004 0513 0322</p>
+                </div>
+                <div class="inner-container">
+                  <h3>WIKIDATA</h3>
+                  <p>QR5584768</p>
+                </div>
+              </div>
+              <div class="container-1">
+                <a href="">https://0331wa828</a>
+              </div>
+              <button class="btn-details" type="button">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data-container">
+        <div class="heading">
+          <h3>Biotropics Malaysia (Malaysia)</h3>
+          <p>Shah Alam (GeoNames ID <span>1732903</span>), Malaysia</p>
+        </div>
+        <div class="details-below">
+          <p class="other-names">
+            <span>OTHER NAMES: </span>Institut Kesihatan Negara (ms), Malaysia
+            NIH, NIH Malaysia, National Institutes of Health Malaysia, NIH
+          </p>
+          <div class="details">
+            <div class="left-details">
+              <div class="cards">
+                <div class="card-1">
+                  <h3>Patents</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Articles</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Dissertation</h3>
+                  <p>1,551,000</p>
+                </div>
+              </div>
+              <div class="chart">
+                <div class="my_chart">
+                  <canvas></canvas>
+                </div>
+                <div>
+                  <h3>44.6%</h3>
+                  <p>691,800 works</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-details">
+              <div class="container-1">
+                <h3>ORGANIZATION TYPES</h3>
+                <p>Company</p>
+              </div>
+              <div class="container-1">
+                <h3>WEBSITE</h3>
+                <p class="website-link">https://www.biotropicsmalaysia.com/a</p>
+              </div>
+              <div class="container-1">
+                <h3>Other Identifiers</h3>
+                <div class="inner-container">
+                  <h3>GRID</h3>
+                  <p>grid.487244.9</p>
+                </div>
+                <div class="inner-container">
+                  <h3>ISNI</h3>
+                  <p>0000 0004 0513 0322</p>
+                </div>
+                <div class="inner-container">
+                  <h3>WIKIDATA</h3>
+                  <p>QR5584768</p>
+                </div>
+              </div>
+              <div class="container-1">
+                <a href="">https://0331wa828</a>
+              </div>
+              <button class="btn-details" type="button">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data-container">
+        <div class="heading">
+          <h3>Biotropics Malaysia (Malaysia)</h3>
+          <p>Shah Alam (GeoNames ID <span>1732903</span>), Malaysia</p>
+        </div>
+        <div class="details-below">
+          <p class="other-names">
+            <span>OTHER NAMES: </span>Institut Kesihatan Negara (ms), Malaysia
+            NIH, NIH Malaysia, National Institutes of Health Malaysia, NIH
+          </p>
+          <div class="details">
+            <div class="left-details">
+              <div class="cards">
+                <div class="card-1">
+                  <h3>Patents</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Articles</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Dissertation</h3>
+                  <p>1,551,000</p>
+                </div>
+              </div>
+              <div class="chart">
+                <div class="my_chart">
+                  <canvas></canvas>
+                </div>
+                <div>
+                  <h3>44.6%</h3>
+                  <p>691,800 works</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-details">
+              <div class="container-1">
+                <h3>ORGANIZATION TYPES</h3>
+                <p>Company</p>
+              </div>
+              <div class="container-1">
+                <h3>WEBSITE</h3>
+                <p class="website-link">https://www.biotropicsmalaysia.com/a</p>
+              </div>
+              <div class="container-1">
+                <h3>Other Identifiers</h3>
+                <div class="inner-container">
+                  <h3>GRID</h3>
+                  <p>grid.487244.9</p>
+                </div>
+                <div class="inner-container">
+                  <h3>ISNI</h3>
+                  <p>0000 0004 0513 0322</p>
+                </div>
+                <div class="inner-container">
+                  <h3>WIKIDATA</h3>
+                  <p>QR5584768</p>
+                </div>
+              </div>
+              <div class="container-1">
+                <a href="">https://0331wa828</a>
+              </div>
+              <button class="btn-details" type="button">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data-container">
+        <div class="heading">
+          <h3>Biotropics Malaysia (Malaysia)</h3>
+          <p>Shah Alam (GeoNames ID <span>1732903</span>), Malaysia</p>
+        </div>
+        <div class="details-below">
+          <p class="other-names">
+            <span>OTHER NAMES: </span>Institut Kesihatan Negara (ms), Malaysia
+            NIH, NIH Malaysia, National Institutes of Health Malaysia, NIH
+          </p>
+          <div class="details">
+            <div class="left-details">
+              <div class="cards">
+                <div class="card-1">
+                  <h3>Patents</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Articles</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Dissertation</h3>
+                  <p>1,551,000</p>
+                </div>
+              </div>
+              <div class="chart">
+                <div class="my_chart">
+                  <canvas></canvas>
+                </div>
+                <div>
+                  <h3>44.6%</h3>
+                  <p>691,800 works</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-details">
+              <div class="container-1">
+                <h3>ORGANIZATION TYPES</h3>
+                <p>Company</p>
+              </div>
+              <div class="container-1">
+                <h3>WEBSITE</h3>
+                <p class="website-link">https://www.biotropicsmalaysia.com/a</p>
+              </div>
+              <div class="container-1">
+                <h3>Other Identifiers</h3>
+                <div class="inner-container">
+                  <h3>GRID</h3>
+                  <p>grid.487244.9</p>
+                </div>
+                <div class="inner-container">
+                  <h3>ISNI</h3>
+                  <p>0000 0004 0513 0322</p>
+                </div>
+                <div class="inner-container">
+                  <h3>WIKIDATA</h3>
+                  <p>QR5584768</p>
+                </div>
+              </div>
+              <div class="container-1">
+                <a href="">https://0331wa828</a>
+              </div>
+              <button class="btn-details" type="button">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data-container">
+        <div class="heading">
+          <h3>Biotropics Malaysia (Malaysia)</h3>
+          <p>Shah Alam (GeoNames ID <span>1732903</span>), Malaysia</p>
+        </div>
+        <div class="details-below">
+          <p class="other-names">
+            <span>OTHER NAMES: </span>Institut Kesihatan Negara (ms), Malaysia
+            NIH, NIH Malaysia, National Institutes of Health Malaysia, NIH
+          </p>
+          <div class="details">
+            <div class="left-details">
+              <div class="cards">
+                <div class="card-1">
+                  <h3>Patents</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Articles</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Dissertation</h3>
+                  <p>1,551,000</p>
+                </div>
+              </div>
+              <div class="chart">
+                <div class="my_chart">
+                  <canvas></canvas>
+                </div>
+                <div>
+                  <h3>44.6%</h3>
+                  <p>691,800 works</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-details">
+              <div class="container-1">
+                <h3>ORGANIZATION TYPES</h3>
+                <p>Company</p>
+              </div>
+              <div class="container-1">
+                <h3>WEBSITE</h3>
+                <p class="website-link">https://www.biotropicsmalaysia.com/a</p>
+              </div>
+              <div class="container-1">
+                <h3>Other Identifiers</h3>
+                <div class="inner-container">
+                  <h3>GRID</h3>
+                  <p>grid.487244.9</p>
+                </div>
+                <div class="inner-container">
+                  <h3>ISNI</h3>
+                  <p>0000 0004 0513 0322</p>
+                </div>
+                <div class="inner-container">
+                  <h3>WIKIDATA</h3>
+                  <p>QR5584768</p>
+                </div>
+              </div>
+              <div class="container-1">
+                <a href="">https://0331wa828</a>
+              </div>
+              <button class="btn-details" type="button">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data-container">
+        <div class="heading">
+          <h3>Biotropics Malaysia (Malaysia)</h3>
+          <p>Shah Alam (GeoNames ID <span>1732903</span>), Malaysia</p>
+        </div>
+        <div class="details-below">
+          <p class="other-names">
+            <span>OTHER NAMES: </span>Institut Kesihatan Negara (ms), Malaysia
+            NIH, NIH Malaysia, National Institutes of Health Malaysia, NIH
+          </p>
+          <div class="details">
+            <div class="left-details">
+              <div class="cards">
+                <div class="card-1">
+                  <h3>Patents</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Articles</h3>
+                  <p>1,551,000</p>
+                </div>
+                <div class="card-1">
+                  <h3>Dissertation</h3>
+                  <p>1,551,000</p>
+                </div>
+              </div>
+              <div class="chart">
+                <div class="my_chart">
+                  <canvas></canvas>
+                </div>
+                <div>
+                  <h3>44.6%</h3>
+                  <p>691,800 works</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-details">
+              <div class="container-1">
+                <h3>ORGANIZATION TYPES</h3>
+                <p>Company</p>
+              </div>
+              <div class="container-1">
+                <h3>WEBSITE</h3>
+                <p class="website-link">https://www.biotropicsmalaysia.com/a</p>
+              </div>
+              <div class="container-1">
+                <h3>Other Identifiers</h3>
+                <div class="inner-container">
+                  <h3>GRID</h3>
+                  <p>grid.487244.9</p>
+                </div>
+                <div class="inner-container">
+                  <h3>ISNI</h3>
+                  <p>0000 0004 0513 0322</p>
+                </div>
+                <div class="inner-container">
+                  <h3>WIKIDATA</h3>
+                  <p>QR5584768</p>
+                </div>
+              </div>
+              <div class="container-1">
+                <a href="">https://0331wa828</a>
+              </div>
+              <button class="btn-details" type="button">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="data-container">
         <div class="heading">
           <h3>Biotropics Malaysia (Malaysia)</h3>
