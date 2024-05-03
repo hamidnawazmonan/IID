@@ -82,7 +82,7 @@ button:focus-visible {
   }
 }
 .organizations-count {
-  padding-left: 80px;
+  padding-left: 85px;
   padding-right: 80px;
   height: 12vh;
   align-items: center;
@@ -231,6 +231,7 @@ button:focus-visible {
   color: #02C7F4;
 }
 .data-container {
+  padding: 40px;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -239,20 +240,15 @@ button:focus-visible {
   border-radius: 30px;
   background: #fff;
   box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1);
-}
-.details-below{
-  padding: 0px 40px 40px 40px;
+  background-color: #ffffff;
 }
 .heading {  
-  border-radius: 30px 30px 0px 0px;
   display: flex;
   width: 100%;
-  padding: 40px 40px 20px 40px;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
-  border-bottom: 1px solid #dadad7;
-  background-color: #f7fcff;
+  border-bottom: 1px solid #dadad7; 
   h3 {
     color: #02C7F4;
     font-size: 36px;
@@ -325,13 +321,13 @@ button:focus-visible {
       gap: 10px;
       display: flex;
       flex-direction: row;
-      background-color: #f7fcff;
+      background-color: #f5f5f5;
       width: fit-content;
-      padding: 20px 40px;
+      padding: 20px 20px;
       justify-content: flex-start;
       align-items: center;
       border-radius: 30px;
-      border: 1px solid #e4f3fc;
+      border: 1px solid #dbdbdb;
       h3,
       p {
         text-align: center;
@@ -416,7 +412,7 @@ button:focus-visible {
 }
 .section {
   margin-top: 20px;
-  background-color: #f7fcff;
+  background-color: #f5f5f5;
   padding: 40px 80px;
   h2 {
     font-size: 28px;
@@ -435,7 +431,7 @@ button:focus-visible {
     width: 80%;
     padding: 12px 24px;
     border-radius: 100px;
-    border: none;
+    border: 1px solid #02C7F4;
     background: #ffffff;
     margin-top: 20px;
   }
